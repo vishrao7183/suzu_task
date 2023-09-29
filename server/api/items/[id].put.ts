@@ -44,7 +44,7 @@ async function validateRequest(reqData: IItem) {
       id: Joi.number().required(),
       name: Joi.string().required(),
       description: Joi.string().required(),
-      price: Joi.number().required(),
+      price: Joi.number().required().min(1),
     });
 
     await validateJoiSchema(reqSchema, reqData);

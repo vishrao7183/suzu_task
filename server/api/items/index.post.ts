@@ -28,7 +28,6 @@ export default defineEventHandler(async (event: H3Event) => {
 
     return responseToSend;
   } catch (err: any) {
-    console.log("errr",err)
     throw createError({
       statusCode: err.statusCode || Http_Codes.serverError,
       statusMessage: err.statusMessage || Server_Error_Message,
@@ -41,7 +40,7 @@ async function validateRequest(reqBody: IItemRequestBody) {
     const itemSchema = Joi.object({
       name: Joi.string().required(),
       description: Joi.string().required(),
-      price: Joi.number().required(),
+      price: Joi.number().required().min(1),
     });
 
     await validateJoiSchema(itemSchema, reqBody);
