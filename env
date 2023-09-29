@@ -1,0 +1,8 @@
+POSTGRES_URL="postgres://default:Jm7TZNSBs2GI@ep-billowing-flower-38187219-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb"
+POSTGRES_PRISMA_URL="postgres://default:Jm7TZNSBs2GI@ep-billowing-flower-38187219-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15"
+POSTGRES_URL_NON_POOLING="postgres://default:Jm7TZNSBs2GI@ep-billowing-flower-38187219.us-east-1.postgres.vercel-storage.com:5432/verceldb"
+POSTGRES_USER="default"
+POSTGRES_HOST="ep-billowing-flower-38187219-pooler.us-east-1.postgres.vercel-storage.com"
+POSTGRES_PASSWORD="Jm7TZNSBs2GI"
+POSTGRES_DATABASE="verceldb"
+JWTSECRET="safgdsfffasfdgad"
