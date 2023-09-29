@@ -7,7 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "npx prisma generate && nuxt prepare && prisma migrate dev"
+    "postinstall": "npx prisma generate && nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
